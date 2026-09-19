@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <div class="main-box">
+
+            <div class="card-header text-center bg-primary">
+                <h2>Budget Tracker System</h2>
+            </div>
+
+
+            <div class="inder-box">
+                <div class="row">
+                    <div class="col-md-4">
+
+                        <div class="card shadow-sm mb-3">
+
+                            <div class="card-body">
+
+                                <h5 class="card-title "> Add Budget</h5>
+
+                                <label class="form-label"> Budget:</label>
+
+                                <input type="number" id="budgetInput" class="form-control mb-3"
+                                    placeholder="Enter budget">
+
+                                <button onclick="addBudget()" class="btn btn-primary w-100">
+                                    Add Budget
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="card shadow-sm mb-3">
+
+                            <div class="card-body">
+
+                                <h5 class="card-title">Add Expense</h5>
+
+                                <label class="form-label"> Expense Title: </label>
+
+                                <input type="text" id="expenseTitle" class="form-control mb-3"
+                                    placeholder="Enter expense">
+
+                                <label class="form-label"> Amount: </label>
+
+                                <input type="number" id="expenseAmount" class="form-control mb-3"
+                                    placeholder="Enter amount">
+
+
+                                <button onclick="addExpense()" class="btn btn-primary w-100">
+                                    Add Expense
+                                </button>
+
+                            </div>
+
+                            <button onclick="resetAll()" class="btn btn-danger w-100"> Reset All </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-8">
+
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="col-md-4">
+                                    <div class="row g-2 mb-4">
+                                        <small>Total Budget </small>
+
+                                        <h6 id="totalBudget" class="fw-bold mb-0"> ₹0 </h6>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="row g-2 mb-4">
+                                        <small>Total Expenses </small>
+
+                                        <h6 id="totalExpenses" class="fw-bold mb-0"> ₹0 </h6>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="row g-2 mb-4">
+                                        <small>Budget left</small>
+
+                                        <h6 id="Budgetleft" class="fw-bold mb-0"> ₹0 </h6>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <h5 class="mb-3"> Expense History: </h5>
+
+                            <div class="table-responsive">
+
+                                <table class="table table-hover">
+                                    <thead class="table-light">
+
+                                        <tr>
+                                            <th>Expense Name</th>
+                                            <th>Amount</th>
+                                            <th>Action </th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody id="expenseList">
+
+                                    </tbody>
+
+                                </table>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
