@@ -1,16 +1,88 @@
-# React + Vite
+# 📝 Todo CRUD - React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive **Todo CRUD Application** built with **React.js**.
 
-Currently, two official plugins are available:
+This project allows users to create, view, update, delete, and manage todo tasks. It also provides separate task statistics for **All Tasks, Pending Tasks, and Completed Tasks**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ✅ Add new tasks
+- 📋 Display all tasks
+- ✏️ Edit existing tasks
+- 🗑️ Delete tasks
+- ☑️ Mark tasks as completed
+- ⏳ Track pending tasks
+- 📊 Display total task count
+- 🎯 Display completed task count
+- 📱 Responsive user interface
+- ⚡ Built with React.js
+- 🎨 Clean and simple UI
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🖥️ Project Preview
+
+### Todo Dashboard
+
+The application provides a simple dashboard where users can manage their daily tasks.
+
+- **All Tasks** – Shows the total number of tasks
+- **Pending** – Shows incomplete tasks
+- **Completed** – Shows completed tasks
+- **Task Table** – Displays task details and available actions
+
+---
+
+## 🛠️ Technologies Used
+
+- **React.js**
+- **JavaScript (ES6+)**
+- **HTML5**
+- **CSS3**
+- **Bootstrap**
+- **Vite**
+- **Git & GitHub**
+
+---
+
+## 📌 CRUD Operations
+
+This project demonstrates the basic CRUD operations:
+
+| Operation | Description |
+|-----------|-------------|
+| Create | Add a new todo task |
+| Read | Display all todo tasks |
+| Update | Edit task details or status |
+| Delete | Remove a todo task |
+
+---
+
+## 📂 Project Structure
+
+```text
+todo-crud/
+│
+├── public/
+│
+├── src/
+│   ├── assets/
+│   │
+│   ├── components/
+│   │   ├── AddTodo.jsx
+│   │   ├── TodoList.jsx
+│   │   └── TodoItem.jsx
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── App.css
+│   └── index.css
+│
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+└── README.md
