@@ -24,6 +24,10 @@ This project allows users to create, view, update, delete, and manage todo tasks
 
 ## 🖥️ Project Preview
 
+## Netlify Link
+
+Link : https://magical-florentine-1ba077.netlify.app/
+
 ### Todo Dashboard
 
 The application provides a simple dashboard where users can manage their daily tasks.
