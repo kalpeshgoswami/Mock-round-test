@@ -94,29 +94,32 @@ const App = () => {
   return (
     <>
 
-      <div className="status">
-        <AddTodo addTodo={handleAdd} EditVal={EditVal} />
+      <h1 className="Todo">Todo Crud</h1>
 
-        <div className="dashboard">
 
-          <div className="card">
-            <h3>All Tasks</h3>
-            <h1>{allTasks}</h1>
-          </div>
 
-          <div className="card">
-            <h3>Pending</h3>
-            <h1>{pendingTasks}</h1>
-          </div>
+      <div className="dashboard">
 
-          <div className="card">
-            <h3>Completed</h3>
-            <h1>{completedTasks}</h1>
-          </div>
-
+        <div className="card">
+          <h3>All Tasks</h3>
+          <h1>{allTasks}</h1>
         </div>
-      </div>
 
+        <div className="card">
+          <h3>Pending</h3>
+          <h1>{pendingTasks}</h1>
+        </div>
+
+        <div className="card">
+          <h3>Completed</h3>
+          <h1>{completedTasks}</h1>
+        </div>
+
+
+
+      </div>
+      <AddTodo addTodo={handleAdd} EditVal={EditVal} />
+      <br />
       <ListTodo
         todos={todos}
         handleDelete={handleDelete}

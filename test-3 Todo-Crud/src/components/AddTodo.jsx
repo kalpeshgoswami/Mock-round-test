@@ -11,6 +11,10 @@ const AddTodo = ({ addTodo, EditVal }) => {
 
   useEffect(() => {
     if (EditVal) {
+      setInput({
+        Task:EditVal.Task,
+        Description:EditVal.Description,
+      })
     }
   }, [EditVal]);
 
@@ -36,7 +40,7 @@ const AddTodo = ({ addTodo, EditVal }) => {
     <>
 
       <form onSubmit={handleSubmit} className="inputForm">
-        <h1 className="Todo">Todo Crud</h1>
+        
         <input className="input"
           type="text"
           placeholder="Enter your Task"
@@ -52,7 +56,7 @@ const AddTodo = ({ addTodo, EditVal }) => {
           onChange={(e) => handleChange("Description", e)}
         />
 
-        <Button type="submit" variant="outline-primary">
+        <Button type="submit" className="btn" variant="outline-primary">
           {EditVal ? "Update" : "Submit"}
         </Button>
 
